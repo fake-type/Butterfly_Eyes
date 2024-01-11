@@ -1,18 +1,22 @@
 import { style } from '@vanilla-extract/css'
 
 export const ImgPreviewContainer = style({
-  position: 'relative'
+  position: 'relative',
+  display: 'flex',
+  overflow: 'hidden'
 })
 
 export const image = style({
   height: '10em',
   width: '100%',
   objectFit: 'cover',
+  transition: '200ms',
 
   selectors: {
     [`${ImgPreviewContainer}:hover &`]: {
       filter: 'brightness(50%)',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      scale: '1.1'
     }
   }
 })
