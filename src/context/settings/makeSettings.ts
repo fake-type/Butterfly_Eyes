@@ -1,6 +1,6 @@
 import { createContext } from 'solid-js'
 import { type Store, type SetStoreFunction, createStore } from 'solid-js/store'
-import { type Settings, settingsScheme } from '@/models/settings.ts'
+import { type Settings } from '@/models/settings.ts'
 
 export type SettingsContextType = readonly [
   state: Store<Settings>,
@@ -8,14 +8,7 @@ export type SettingsContextType = readonly [
 ]
 
 export const makeSettingsContext = (): SettingsContextType => {
-  const localState = localStorage.getItem('settings')
-  const settings = settingsScheme.safeParse(
-    localState != null ? JSON.parse(localState) : {}
-  )
-
-  const [state, setState] = createStore<Settings>(
-    settings.success ? settings.data : {}
-  )
+  const [state, setState] = createStore<Settings>({})
 
   return [state, setState]
 }

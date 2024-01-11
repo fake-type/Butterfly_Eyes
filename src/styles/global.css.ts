@@ -19,3 +19,7 @@ globalStyle('body', {
 globalStyle('ol, ul, menu', { listStyle: 'none' })
 
 globalStyle('input[type=file]', { display: 'none' })
+
+globalStyle('label', {
+  userSelect: 'none'
+})
