@@ -10,6 +10,9 @@ dependencies:
     version: 1.8.7
 
 devDependencies:
+  '@solidjs/testing-library':
+    specifier: ^0.8.5
+    version: 0.8.5(@solidjs/router@0.10.8)(solid-js@1.8.7)
   '@storybook/addon-essentials':
     specifier: ^7.6.6
     version: 7.6.6(react-dom@18.2.0)(react@18.2.0)
@@ -28,6 +31,9 @@ devDependencies:
   '@storybook/testing-library':
     specifier: ^0.2.2
     version: 0.2.2
+  '@testing-library/user-event':
+    specifier: ^14.5.2
+    version: 14.5.2(@testing-library/dom@9.3.3)
   '@vanilla-extract/css':
     specifier: ^1.14.0
     version: 1.14.0
@@ -3118,6 +3124,26 @@ packages:
       '@sinonjs/commons': 3.0.0
     dev: true
 
+  /@solidjs/router@0.10.8(solid-js@1.8.7):
+    resolution: {integrity: sha512-C71HFnEHxO2OvgQbQ2auFntxUM3rY5WaYeF45HBivGUVEEI/Pn6M6id+egVcKHqFSF9I6rwc5Q36i7aO+jlGPA==}
+    peerDependencies:
+      solid-js: ^1.8.6
+    dependencies:
+      solid-js: 1.8.7
+    dev: true
+
+  /@solidjs/testing-library@0.8.5(@solidjs/router@0.10.8)(solid-js@1.8.7):
+    resolution: {integrity: sha512-L9TowCoqdRQGB8ikODh9uHXrYTjCUZseVUG0tIVa836//qeSqXP4m0BKG66v9Zp1y1wRxok5qUW97GwrtEBMcw==}
+    engines: {node: '>= 14'}
+    peerDependencies:
+      '@solidjs/router': '>=0.6.0'
+      solid-js: '>=1.0.0'
+    dependencies:
+      '@solidjs/router': 0.10.8(solid-js@1.8.7)
+      '@testing-library/dom': 9.3.3
+      solid-js: 1.8.7
+    dev: true
+
   /@storybook/addon-actions@7.6.6:
     resolution: {integrity: sha512-mLJip9Evb2Chj7ymKbpaybe5NgDy3Du7oSWeURPy/0qXJ2cBqHWnhZ8CTK2DasrstsUhQSJaZVXHhaENT+fn+g==}
     dependencies:
@@ -3874,7 +3900,7 @@ packages:
     resolution: {integrity: sha512-L8sXFJUHmrlyU2BsWWZGuAjv39Jl1uAqUHdxmN42JY15M4+XCMjGlArdCCjDe1wpTSW6USYISA9axjZojgtvnw==}
     dependencies:
       '@testing-library/dom': 9.3.3
-      '@testing-library/user-event': 14.5.1(@testing-library/dom@9.3.3)
+      '@testing-library/user-event': 14.5.2(@testing-library/dom@9.3.3)
       ts-dedent: 2.2.0
     dev: true
 
@@ -4057,8 +4083,8 @@ packages:
       pretty-format: 27.5.1
     dev: true
 
-  /@testing-library/user-event@14.5.1(@testing-library/dom@9.3.3):
-    resolution: {integrity: sha512-UCcUKrUYGj7ClomOo2SpNVvx4/fkd/2BbIHDCle8A0ax+P3bU7yJwDBDrS6ZwdTMARWTGODX1hEsCcO+7beJjg==}
+  /@testing-library/user-event@14.5.2(@testing-library/dom@9.3.3):
+    resolution: {integrity: sha512-YAh82Wh4TIrxYLmfGcixwD18oIjyC1pFQC2Y01F2lzV2HTMiYrI0nze0FD0ocB//CKS/7jIUgae+adPqxK5yCQ==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
       '@testing-library/dom': '>=7.21.4'
