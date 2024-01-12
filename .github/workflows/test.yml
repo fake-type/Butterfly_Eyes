@@ -1,0 +1,12 @@
+name: vitest test runner
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  run-test:
+    uses: ./.github/workflows/pnpm.yml
+    with:
+      command: vitest
