@@ -5,9 +5,9 @@ import {
   onMount,
   For
 } from 'solid-js'
-import { useBackgrounds } from '@/context/backgrounds/selector.ts'
-import writeFiles from '@/services/writeFile.ts'
-import readFiles from '@/services/readFiles.ts'
+import { useBackgrounds } from '@/core/context/backgrounds/selector.ts'
+import writeFiles from '@/core/services/writeFile.ts'
+import readFiles from '@/core/services/readFiles.ts'
 import Preview from './ImgPreview/ImgPreview.tsx'
 import styles from './backgrounds.css.ts'
 

@@ -1,6 +1,6 @@
 import { createContext } from 'solid-js'
 import { type Store, type SetStoreFunction, createStore } from 'solid-js/store'
-import { type Settings } from '@/models/settings.ts'
+import { type Settings } from '@/core/models/settings'
 
 export type SettingsContextType = readonly [
   state: Store<Settings>,

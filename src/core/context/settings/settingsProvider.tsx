@@ -1,6 +1,6 @@
 import { type JSX, type Component, createEffect } from 'solid-js'
 import { makeSettingsContext, SettingsContext } from './makeSettings.ts'
-import { settingsScheme } from '@/models/settings.ts'
+import { settingsScheme } from '@/core/models/settings.ts'
 
 export const SettingsProvider: Component<{ children: JSX.Element }> = props => {
   const [state, dispatch] = makeSettingsContext()

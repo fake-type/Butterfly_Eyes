@@ -5,7 +5,7 @@ import {
   Show,
   createEffect
 } from 'solid-js'
-import { useSettings } from '@/context/settings/selector.ts'
+import { useSettings } from '@/core/context/settings/selector.ts'
 import * as styles from './styles.css.ts'
 
 const Clock: Component = () => {

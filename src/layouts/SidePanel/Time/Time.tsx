@@ -1,5 +1,5 @@
 import { type Component } from 'solid-js'
-import { useSettings } from '@/context/settings/selector'
+import { useSettings } from '@/core/context/settings/selector'
 
 interface TimeCheckboxInputProps {
   isChecked?: boolean

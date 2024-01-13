@@ -1,4 +1,4 @@
-import createDirRec from '@/utils/fileSystem/makeDirRec.ts'
+import createDirRec from '@/shared/utils/fileSystem/makeDirRec'
 
 interface WriteFileOptions {
   file: File

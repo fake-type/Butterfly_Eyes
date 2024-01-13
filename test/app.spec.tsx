@@ -1,4 +1,4 @@
-import App from './App.tsx'
+import App from '@/App.tsx'
 import { render } from '@solidjs/testing-library'
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
 

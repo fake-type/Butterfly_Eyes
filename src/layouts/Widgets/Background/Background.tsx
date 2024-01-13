@@ -1,5 +1,5 @@
 import { type Component, Show, createEffect, createSignal } from 'solid-js'
-import { useBackgrounds } from '@/context/backgrounds/selector.ts'
+import { useBackgrounds } from '@/core/context/backgrounds/selector.ts'
 import * as styles from './styles.css.ts'
 
 const Background: Component = () => {

@@ -1,6 +1,6 @@
 import { createSignal, type Component } from 'solid-js'
 import styles from './_sidePanel.css.ts'
-import OpenBtn from '../../components/OpenBtn.tsx'
+import OpenBtn from '@/shared/components/OpenModalBtn'
 import BackgroundConfigPanel from '@/layouts/SidePanel/Backgrounds/index.tsx'
 import TimeConfigPanel from './Time/Time.tsx'
 
@@ -16,7 +16,11 @@ const SidePanelLayout: Component = () => {
         <BackgroundConfigPanel />
         <TimeConfigPanel />
       </aside>
-      <OpenBtn onClick={() => setActive(prev => !prev)} />
+      <OpenBtn
+        onClick={() => {
+          setActive(prev => !prev)
+        }}
+      />
     </div>
   )
 }

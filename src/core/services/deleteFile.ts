@@ -1,5 +1,5 @@
-import makeDirRec from '@/utils/fileSystem/makeDirRec.ts'
-import { useBackgrounds } from '@/context/backgrounds/selector'
+import makeDirRec from '@/shared/utils/fileSystem/makeDirRec'
+import { useBackgrounds } from '@/core/context/backgrounds/selector'
 
 const deleteFile = async (filename: string): Promise<void> => {
   const [, { setFileHandles }] = useBackgrounds()
