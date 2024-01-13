@@ -6,9 +6,9 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "test": "vitest",
+    "story": "storybook dev -p 8086 --quiet --no-open",
     "format": "prettier --write --cache \"**/*.(ts|tsx)\"",
-    "lint": "eslint --fix .",
-    "story": "storybook dev -p 8086 --quiet --no-open"
+    "lint": "eslint --fix ."
   },
   "dependencies": {
     "solid-js": "^1.8.7"

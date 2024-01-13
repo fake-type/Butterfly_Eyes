@@ -1,0 +1,22 @@
+name: Code linting and type check
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  formater:
+    uses: ./.github/workflows/pnpm.yml
+    with:
+      command: format
+
+  lint:
+    uses: ./.github/workflows/pnpm.yml
+    with:
+      command: lint
+
+  build:
+    uses: ./.github/workflows/pnpm.yml
+    with:
+      command: build
