@@ -4,7 +4,7 @@ import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
 
 describe('<App />', () => {
   beforeEach(() => {
-    vi.mock('@/core/services/readFiles.ts', () => ({
+    vi.mock('@/features/Background/services/readFiles.ts', () => ({
       default: async () => []
     }))
   })
