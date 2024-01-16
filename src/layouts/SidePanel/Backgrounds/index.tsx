@@ -6,8 +6,8 @@ import {
   For
 } from 'solid-js'
 import { useBackgrounds } from '@/core/context/backgrounds/selector.ts'
-import writeFiles from '@/core/services/writeFile.ts'
-import readFiles from '@/core/services/readFiles.ts'
+import writeFiles from '@/features/Background/services/writeFile.ts'
+import readFiles from '@/features/Background/services/readFiles.ts'
 import Preview from './ImgPreview/ImgPreview.tsx'
 import styles from './backgrounds.css.ts'
 

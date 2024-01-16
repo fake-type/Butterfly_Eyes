@@ -1,5 +1,5 @@
 import { type Component, createResource } from 'solid-js'
-import deleteFile from '@/core/services/deleteFile.ts'
+import deleteFile from '@/features/Background/services/deleteFile.ts'
 import * as styles from './imgPreview.css.ts'
 
 interface PreviewProps {
