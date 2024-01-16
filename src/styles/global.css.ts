@@ -6,20 +6,17 @@ globalStyle('*, :after, :before', {
   boxSizing: 'border-box'
 })
 
-globalStyle('html', {
-  fontSize: '100%',
-  fontFamily: 'system-ui'
-})
-
 globalStyle('body', {
   color: 'white',
+  fontFamily: 'system-ui',
+  minHeight: '100dvh',
   fontVariantNumeric: 'tabular-nums lining-nums'
 })
 
-globalStyle('ol, ul, menu', { listStyle: 'none' })
+globalStyle('h1, h2, h3, h4', {
+  textWrap: 'balance'
+})
 
-globalStyle('input[type=file]', { display: 'none' })
-
-globalStyle('label', {
-  userSelect: 'none'
+globalStyle('p', {
+  textWrap: 'pretty'
 })
